@@ -7,7 +7,7 @@ Build a realistic office network, protect it with a firewall, and monitor it for
 
 ## Project structure
 - `docs/` - write-ups for each phase
-- `configs/` - device and firewall configs
+- `configs/` - device and ACL configs
 - `diagrams/` - network diagrams
 - `screenshots/` - proof that things work
 
