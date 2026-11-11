@@ -13,8 +13,9 @@ Build a realistic office network, protect it with a firewall, and monitor it for
 
 ## Progress
 - [x] Project structure created
-- [ ] Choose lab tools
-- [ ] Design the network
-- [ ] Add firewall and security rules
-- [ ] Set up monitoring
-- [ ] Run test attacks and record alerts
+- [x] Choose lab tools (Cisco Packet Tracer)
+- [x] Design the network
+- [x] Build VLANs, trunk, and inter-VLAN routing
+- [x] Add ACL security rules
+- [ ] Set up monitoring (logging and SNMP)
+- [ ] Run test attacks and record results
