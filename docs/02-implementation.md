@@ -32,7 +32,7 @@ An extended ACL named GUEST-IN is applied inbound on the guest subinterface. It 
 | Guest to its own gateway | Replies |
 
 ## What I learned
-VLANs separate traffic but they don't secure it on their own.** After creating the VLANs, my guest PC could still reach the company server because the router connects every VLAN by default.
+VLANs separate traffic but they don't secure it on their own. After creating the VLANs, my guest PC could still reach the company server because the router connects every VLAN by default.
 - **One trunk link can carry many VLANs.** Using router-on-a-stick, I gave each VLAN its own subinterface on a single router port so one cable acts as the gateway for four networks.
 - **ACLs are what enforce the rules.** Placing a named extended ACL on the guest subinterface blocked guests from the Staff, Servers, and Management networks, and the match counters on `show access-lists` proved it was working.
 - **ACL order matters.** The router reads rules top to bottom and drops anything that doesn't match, so the final `permit ip any any` line is needed to keep normal guest traffic working.
