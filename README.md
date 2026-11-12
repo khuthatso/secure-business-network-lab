@@ -17,5 +17,5 @@ Build a realistic office network, protect it with a firewall, and monitor it for
 - [x] Design the network
 - [x] Build VLANs, trunk, and inter-VLAN routing
 - [x] Add ACL security rules
-- [ ] Set up monitoring (logging and SNMP)
-- [ ] Run test attacks and record results
+- [x] Set up monitoring (syslog)
+- [x] Run test attacks and record results
