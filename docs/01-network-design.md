@@ -21,3 +21,7 @@ VLANs separate traffic on the same switch so a problem in one zone (like an infe
 - 2 staff PCs
 - 1 server
 - 1 guest PC
+
+## Security layers
+1. Router ACLs: control traffic between internal VLANs
+2. Switch: unused ports disabled and parked in an isolated VLAN
