@@ -1,10 +1,10 @@
-Router# show running-config
+Router#show running-config
 Building configuration...
 
-Current configuration : 1317 bytes
+Current configuration : 1336 bytes
 !
 version 15.1
-no service timestamps log datetime msec
+service timestamps log datetime msec
 no service timestamps debug datetime msec
 no service password-encryption
 !
@@ -64,7 +64,7 @@ interface GigabitEthernet0/0.30
 !
 interface GigabitEthernet0/0.99
  encapsulation dot1Q 99
- ip address 198.168.99.1 255.255.255.0
+ ip address 192.168.99.1 255.255.255.0
 !
 interface GigabitEthernet0/1
  no ip address
@@ -97,6 +97,7 @@ ip access-list extended GUEST-IN
 !
 !
 !
+logging 192.168.20.10
 line con 0
 !
 line aux 0
